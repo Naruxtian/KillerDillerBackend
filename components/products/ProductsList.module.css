@@ -1,0 +1,30 @@
+.sort-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.filters-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    border-right: none;
+    align-self: center;
+    padding-right: 0;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 900px) {
+    .filters-box {
+        max-width: 200px;
+        min-width: 200px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        align-self: auto;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+}

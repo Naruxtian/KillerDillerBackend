@@ -1,0 +1,13 @@
+.slider {
+    padding: 2rem 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider__slide {
+    max-width: 270px;
+    margin: 0 auto;
+}
