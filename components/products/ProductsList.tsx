@@ -510,7 +510,28 @@ export const ProductsList: React.FC<Props> = ({ products }) => {
                                                             height: '30px',
                                                             borderRadius: '50%',
                                                             border: '1px solid #c9c9c9',
-                                                            backgroundColor: color.hex,
+                                                            backgroundColor: (() => {
+                                                                const colorName = color.name.toLowerCase();
+                                                          
+                                                                switch (colorName) {
+                                                                  case 'beige':
+                                                                    return '#F5F5DC'; // Beige
+                                                                  case 'negro':
+                                                                    return '#000000'; // Negro
+                                                                  case 'mostaza':
+                                                                    return '#FFDB58'; // Mostaza
+                                                                  case 'naranja':
+                                                                    return '#FFA500'; // Naranja
+                                                                  case 'café':
+                                                                    return '#9f6d31'; // Café
+                                                                  case 'azul':
+                                                                    return '#0000FF'; // Azul
+                                                                  case 'blanco':
+                                                                    return '#FFFFFF'; // Blanco
+                                                                  default:
+                                                                    return '#FFFFFF'; // Color predeterminado (blanco) para otros casos
+                                                                }
+                                                              })(),
                                                             zIndex: 2
                                                         }}
                                                         
