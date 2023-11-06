@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
 
-html, body, #__next {
+html,
+body,
+#__next {
   height: 100%;
 }
 
@@ -18,7 +20,7 @@ html, body, #__next {
   100% {
     opacity: 1;
   }
-} 
+}
 
 @-webkit-keyframes fadeIn {
   0% {
@@ -50,6 +52,7 @@ body.loading {
 }
 
 .black-btn:hover {
+  color: #000000;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -74,7 +77,7 @@ body.loading {
   width: fit-content;
   padding: 0;
   overflow-y: scroll;
-  -ms-overflow-style: none;  
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 

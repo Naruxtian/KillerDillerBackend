@@ -1,4 +1,4 @@
-EventSection.txs: /* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-img-element */
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import { IEvent } from "../../interfaces";
